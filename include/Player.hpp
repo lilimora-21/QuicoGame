@@ -2,6 +2,7 @@
 #define PLAYER_HPP
 
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
 class Player {
 public:
@@ -12,6 +13,8 @@ public:
     sf::FloatRect getBounds() const;
 
 private:
+    sf::SoundBuffer jumpBuffer_;
+    sf::Sound       jumpSound_;
     sf::Sprite sprite_;
     float      velocityY_ = 0.f;
     bool       isJumping_ = false;

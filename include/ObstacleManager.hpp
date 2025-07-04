@@ -10,7 +10,7 @@
 class ObstacleManager {
 public:
     ObstacleManager(ResourceManager& resources);
-    void update(sf::Time dt);
+    void update(sf::Time dt, float speedMultiplier);
     void draw(sf::RenderWindow& window);
     bool checkCollision(const sf::FloatRect& playerBounds);
     

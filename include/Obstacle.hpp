@@ -8,7 +8,7 @@ enum class ObstacleType { Barrel, Papalote };
 class Obstacle {
 public:
     Obstacle(ObstacleType type, sf::Texture& tex, float startX);
-    void          update(sf::Time dt);
+    void update(sf::Time dt, float speedMultiplier);
     void          draw(sf::RenderWindow& window);
     sf::FloatRect getBounds() const;
 

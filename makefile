@@ -2,7 +2,7 @@
 
 CXX      := g++
 CXXFLAGS := -std=c++17 -Iinclude `pkg-config --cflags sfml-all`
-LDFLAGS  := `pkg-config --libs sfml-graphics sfml-window sfml-system`
+LDFLAGS  := `pkg-config --libs sfml-graphics sfml-window sfml-system sfml-audio`
 
 SRC_DIR  := src
 SRCS     := $(wildcard $(SRC_DIR)/*.cpp)
