@@ -13,8 +13,6 @@
 /src        # Archivos .cpp (implementación)
 
 
-
-
 ## Uso del Makefile
 
 El proyecto incluye un archivo `Makefile` que facilita la compilación y ejecución del juego. Para utilizarlo, abre una terminal en la carpeta del proyecto y ejecuta los siguientes comandos:
